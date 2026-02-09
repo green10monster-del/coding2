@@ -74,26 +74,27 @@
 /* セクション全体 */
 .news {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 120px 0;
+  padding: 60px 0;
+}
+
+.container {
+  padding: 50PX;
+  height: 60px;
 }
 
 /* 見出し */
-.news-header h2 {
-  font-size: 20x;
+.news-header  {
+  font-size: 20px;
+  padding-bottom: 40px;
   font-weight: normal;
   letter-spacing: 0.4em;
   margin: 0 
 }
 
-.news-sub p {
-  margin: 0 0 40px;
-  font-size: 14px;
-}
-
 /* ニュース一覧 */
 .news-list {
   display: flex;
+  margin-top: 30px;
 }
 
 /* 各ニュース */
@@ -151,6 +152,23 @@ h3 {
   font-weight: normal;
   margin: 0;
 }
+
+.feature {
+  display:flex;
+  padding: 100px 20px;
+}
+
+/* .about-img {
+  width:20px;
+  height:20px;
+}
+
+.about-text {
+  width:20px;
+  margin: 20px;
+} */
+
+
 
 /* ===== ここからスマホ用 ===== */
 @media (max-width: 750px) {
