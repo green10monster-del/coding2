@@ -9,6 +9,8 @@
 .header {
   border-bottom: 1px solid #ddd;
   display: flex;
+  height: 60p;
+  background-color: #ddd;
 }
 
 .header-left {
@@ -19,7 +21,6 @@
   max-width: 1200px;
   margin: 0 auto;
   height: 80px;
-
   display: flex;
   align-items: center;
 }
@@ -29,11 +30,14 @@
   font-size: 32px;
   letter-spacing: 0.3em;
   font-weight: 500;
+  padding: 20px 20px 20px 20px;
 }
 
 /* ナビ */
 .nav {
   margin: 0 auto;
+  padding: 30px 40px;
+  font-size: 10px;
  }
 
 .nav ul {
@@ -148,6 +152,46 @@ h3 {
   margin: 0;
 }
 
+/* ===== ここからスマホ用 ===== */
+@media (max-width: 750px) {
 
+  .header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  #header .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  img {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+
+  .rogo {
+  font-size: 40px;
+  letter-spacing: 0.4em;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+  }
+
+  .nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  .nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  }
+  
+
+}
