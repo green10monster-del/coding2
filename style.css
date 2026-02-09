@@ -155,18 +155,45 @@ h3 {
 
 .feature {
   display:flex;
-  padding: 100px 20px;
-}
-
-/* .about-img {
-  width:20px;
-  height:20px;
+  padding: 100px 0;
 }
 
 .about-text {
-  width:20px;
-  margin: 20px;
-} */
+  margin-bottom: 40px;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  letter-spacing: 0.4em;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.about-text h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.about-text::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #000;
+}
+
+.about-text2 {
+  line-height: 2;
+}
+
+.about-text2 p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 40px;
+}
+
 
 
 
