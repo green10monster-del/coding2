@@ -83,7 +83,7 @@
 }
 
 /* 見出し */
-.news-header  {
+.section-header  {
   font-size: 20px;
   padding-bottom: 40px;
   font-weight: normal;
@@ -184,15 +184,62 @@ h3 {
   background: #000;
 }
 
-.about-text2 {
+.about-text {
   line-height: 2;
 }
 
-.about-text2 p {
+.about-text p {
   font-size: 16px;
   line-height: 1.8;
   margin-top: 40px;
 }
+
+.business {
+  padding: 700px 0;
+}
+
+.business-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  row-gap: 120px;
+}
+
+.business-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.business-name {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+.business-item img {
+   max-width: 100%;
+  vertical-align: bottom;
+}
+
+.zenntai {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.company-image {
+  width: 50%;
+}
+
+.company-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.company-list {
+  padding-right: 40px;
+}
+
 
 
 
@@ -210,6 +257,9 @@ h3 {
   #header .inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .header-left {
+    display: block;
   }
 
   img {
