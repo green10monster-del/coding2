@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #f0f0f0;
+}
+
 /* ヘッダー全体 */
 .header {
   border-bottom: 1px solid #ddd;
@@ -208,6 +212,21 @@ h3 {
   row-gap: 120px;
 }
 
+.business-left {
+  display: flex;
+  margin-top: 48px;
+  flex-direction: column;
+  gap: 16px; 
+  align-items: center; 
+}
+
+.business-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  align-items: center; 
+}
+
 .business-item {
   position: relative;
 }
@@ -246,8 +265,12 @@ h3 {
   flex-direction: row-reverse;
 }
 
-.company-image {
-  width: 50%;
+.company {
+  position: relative;
+}
+.company-info {
+  width: 567px;
+  background-color: #fff;
 }
 
 .company-image img {
@@ -258,6 +281,11 @@ h3 {
 
 .company-list {
   padding-right: 40px;
+}
+
+.company-info {
+  width: 567px;
+  background-color: #ffff;
 }
 
 .footer {
