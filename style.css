@@ -79,7 +79,6 @@
 
 .container {
   padding: 50PX;
-  height: 60px;
 }
 
 /* 見出し */
@@ -155,12 +154,16 @@ h3 {
 
 .feature {
   display:flex;
-  padding: 100px 0;
 }
 
 .about-text {
   margin-bottom: 40px;
 }
+
+.about-img img{
+  margin-right: 30px;
+}
+
 
 .about-text h2 {
   font-size: 30px;
@@ -206,19 +209,36 @@ h3 {
 }
 
 .business-item {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 .business-name {
-  font-size: 16px;
-  font-weight: normal;
-  margin-bottom: 16px;
+  width: 320px;
+  position: relative;
 }
 
 .business-item img {
-   max-width: 100%;
-  vertical-align: bottom;
+  width: 50%;
+  position: relative;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.business-item p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.service-item:nth-child(2) {
+  transform: translateY(20px);
+}
+.service-item:nth-child(3) {
+  transform: translateY(40px);
+}
+.service-item:nth-child(4) {
+  transform: translateY(60px);
 }
 
 .zenntai {
@@ -240,6 +260,13 @@ h3 {
   padding-right: 40px;
 }
 
+.footer {
+  padding: 40px;
+}
+
+.footer-info {
+  padding: 16px;
+}
 
 
 
