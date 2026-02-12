@@ -237,7 +237,7 @@ h3 {
 }
 
 .business-item img {
-  width: 50%;
+  width: 100%;
   position: relative;
   right: 0px;
   top: 50%;
@@ -273,10 +273,19 @@ h3 {
   background-color: #fff;
 }
 
+.company-image {
+  width: 50%;
+  position:absolute;
+  right:0px;
+  top: 50%;
+  transform: translateY(-50%);  
+}
+
 .company-image img {
   width: 100%;
   height: auto;
   display: block;
+  transform: translateY(-250px);
 }
 
 .company-list {
@@ -288,12 +297,22 @@ h3 {
   background-color: #ffff;
 }
 
+
 .footer {
   padding: 40px;
+  background-color: #fff;
 }
 
 .footer-info {
   padding: 16px;
+  font-size: 16px;
+  text-align:right
+}
+
+.footer-logo {
+  font-size: 48px; 
+  font-weight: bold;     
+  letter-spacing: 0.4em;
 }
 
 
