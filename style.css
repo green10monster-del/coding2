@@ -274,7 +274,8 @@ h3 {
 }
 
 .company-image {
-  width: 50%;
+  width: 53%;
+  height: 400px;
   position:absolute;
   right:0px;
   top: 50%;
@@ -283,13 +284,24 @@ h3 {
 
 .company-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  transform: translateY(-250px);
+  object-fit: cover;
 }
 
 .company-list {
   padding-right: 40px;
+}
+
+.company-row {
+  display: flex;
+  gap: 20px;
+} 
+
+.company-row dd { 
+  margin-left: 130px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .company-info {
