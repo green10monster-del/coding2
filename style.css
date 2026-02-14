@@ -295,13 +295,20 @@ h3 {
 
 .company-row {
   display: flex;
+  width: auto;
   gap: 20px;
 } 
+
+.company-row dt {
+  display: inline-block;
+  width: auto;
+}
 
 .company-row dd { 
   margin-left: 130px;
   margin-bottom: 10px;
-  text-align: left;
+  display: inline-block;
+  width: auto;
 }
 
 .company-info {
