@@ -13,7 +13,7 @@ body {
 .header {
   border-bottom: 1px solid #ddd;
   display: flex;
-  height: 60p;
+  height: 80px;
   background-color: #ddd;
 }
 
@@ -31,7 +31,7 @@ body {
 
 /* ロゴ */
 .logo {
-  font-size: 32px;
+  font-size: 25px;
   letter-spacing: 0.3em;
   font-weight: 500;
   padding: 20px 20px 20px 20px;
@@ -73,6 +73,18 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
+}
+
+.mv {
+  width: 100%;
+  height: 100vh;
+  height: calc(100vh - 80px);
+}
+
+.mv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* セクション全体 */
@@ -158,16 +170,29 @@ h3 {
 
 .feature {
   display:flex;
+  gap: 60px;
 }
 
 .about-text {
   margin-bottom: 40px;
 }
 
+.about-img {
+  width: 60%;
+  height: 400px;
+}
+
 .about-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   margin-right: 30px;
 }
 
+.text-box {
+  width: 40%;
+  margin-top: 100px;
+}
 
 .about-text h2 {
   font-size: 30px;
@@ -299,12 +324,12 @@ h3 {
   gap: 20px;
 } 
 
-.company-row dt {
+ dt {
   display: inline-block;
   width: auto;
 }
 
-.company-row dd { 
+ dd { 
   margin-left: 130px;
   margin-bottom: 10px;
   display: inline-block;
@@ -338,7 +363,7 @@ h3 {
 
 
 /* ===== ここからスマホ用 ===== */
-@media (max-width: 750px) {
+@media (max-width: 900px) {
 
   .header {
     height: 80px;
@@ -351,8 +376,13 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
   }
+  
   .header-left {
     display: block;
+  }
+
+  .header-right a {
+    display: none;
   }
 
   img {
@@ -360,11 +390,15 @@ h3 {
     vertical-align: bottom;
   }
 
-  .rogo {
-  font-size: 40px;
-  letter-spacing: 0.4em;
-  font-weight: normal;
-  margin: 0 0 10px 0;
+  .logo {
+    font-size: 25px;
+    letter-spacing: 0.4em;
+    font-weight: normal;
+    padding: 10px 20px 0 20px;
+  }
+
+  .nav {
+    padding: 0px 20px;
   }
 
   .nav ul {
@@ -378,7 +412,7 @@ h3 {
   .nav a {
   text-decoration: none;
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   }
   
 
