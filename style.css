@@ -91,6 +91,7 @@ body {
 .news {
   max-width: 1200px;
   padding: 60px 0;
+  margin: 0 auto;
 }
 
 .container {
@@ -104,6 +105,15 @@ body {
   font-weight: normal;
   letter-spacing: 0.4em;
   margin: 0 
+}
+
+.section-header::after {
+ content: "";
+ display: block;
+ width: 40px;
+ height: 1px;
+ background: #000;
+ margin-top: 20px; 
 }
 
 /* ニュース一覧 */
@@ -226,6 +236,10 @@ h3 {
   margin-top: 40px;
 }
 
+.about-text2 {
+  line-height: 2.2;
+}
+
 .business {
   padding: 50px 0;
 }
@@ -235,6 +249,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
   column-gap: 80px;
   row-gap: 120px;
+  max-width: 1000px;
 }
 
 .business-left {
@@ -254,6 +269,18 @@ h3 {
 
 .business-item {
   position: relative;
+}
+
+.business-item:nth-child(1),
+.business-item:nth-child(3) {
+ position: relative;
+ top: 100px;
+}
+
+.business-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .business-name {
