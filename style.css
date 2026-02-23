@@ -388,6 +388,12 @@ h3 {
 /* ===== ここからスマホ用 ===== */
 @media (max-width: 900px) {
 
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
   .header {
     height: 80px;
     display: flex;
@@ -438,5 +444,81 @@ h3 {
   font-size: 14px;
   }
   
+  .news-list {
+    flex-direction: column; 
+    gap: 40px;
+  }
+
+  .news-item {
+    padding: 0;
+  }
+
+  .news-item:after {
+    display: none;
+  }
+
+  .feature {
+    flex-direction: column; 
+  }
+
+  .about-img {
+    width: 100%; 
+    height: 300px;
+  }
+
+  .text-box {
+    margin-top: 0;
+    padding: 0 50px;
+    width: 100%;
+  }
+
+  .about-text h2 {
+    margin-top: 0;
+  }
+
+  .business-list {
+    grid-template-columns: 1fr; 
+    row-gap: 20px;
+  }
+
+  .business-left {
+    margin-top: 0;
+  }
+
+  .business-item {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .business-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .company-info {
+    width: 100%;
+    padding: 20px;
+  }
+  .zenntai {
+    flex-direction: column-reverse; 
+  }
+
+  .company-row {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .company-row dd {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .company-image {
+    position: static; 
+    transform: translateY(0); 
+    width: 100%;
+    margin-top: 20px;
+  }
 
 }
