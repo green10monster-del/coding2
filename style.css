@@ -250,6 +250,7 @@ h3 {
   column-gap: 80px;
   row-gap: 120px;
   max-width: 1000px;
+  margin: 0 auto;
 }
 
 .business-left {
@@ -310,15 +311,17 @@ h3 {
 
 .zenntai {
   display: flex;
-  flex-direction: row-reverse;
 }
 
 .company {
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .company-info {
-  width: 567px;
+  width: 55%;
   background-color: #fff;
+  padding: 100px 8% 100px 6%;
 }
 
 .company-image {
@@ -349,19 +352,13 @@ h3 {
 
  dt {
   display: inline-block;
-  width: auto;
+  width: 64px;
 }
 
  dd { 
   margin-left: 130px;
   margin-bottom: 10px;
   display: inline-block;
-  width: auto;
-}
-
-.company-info {
-  width: 567px;
-  background-color: #ffff;
 }
 
 
